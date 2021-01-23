@@ -8,6 +8,7 @@
   --additional-bg-color: #2f303a;
   --accent-color: #2196f3;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --header-line-color: #ececec;
 }
 
 /* ширина контейнера 1170px */
@@ -58,6 +59,8 @@ img {
   color: var(--primary-logo-color);
   text-decoration: none;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .accent {
@@ -85,11 +88,14 @@ img {
   margin-bottom: 50px;
 }
 
+.link {
+  cursor: pointer;
+}
+
 /* HEADER */
 
 .header {
-  /* padding-top: 24px; */
-  /* padding-bottom: 25px; */
+  border-bottom: 1px solid var(--header-line-color);
 }
 
 .header .container {
@@ -151,6 +157,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--secondary-txt-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts .link:hover,
@@ -187,7 +195,6 @@ img {
   background-color: var(--accent-color);
   padding: 10px 32px;
   border: none;
-  min-width: ;
 }
 
 /* FEATURES */
@@ -331,6 +338,10 @@ img {
 
 /* PORTFOLIO */
 
+.main-portfolio {
+  padding: 94px 0 94px 0;
+}
+
 .select-btn {
   font-weight: 500;
   font-size: 16px;
@@ -338,12 +349,48 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-txt-color);
   background-color: var(--secondary-bg-color);
+  border: none;
+  text-align: center;
+  color: var(--primary-txt-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  outline: none;
 }
 
 .select-btn:hover,
-.select-btn:focus {
+.select-btn:focus,
+.select-btn:active {
   color: var(--additional-txt-color);
   background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+}
+
+.main-portfolio .filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-button + .filter-button {
+  margin-left: 8px;
+}
+
+.filter {
+  margin-bottom: 50px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.project-content {
+  padding: 20px 24px;
+}
+
+.project-item {
+  margin: 15px;
 }
 
 .project-title {
