@@ -225,7 +225,7 @@ img {
 }
 
 .features-section .list-item {
-  max-width: 270px;
+  width: calc((100%-90px) / 4);
 }
 
 .features-section .list-item:not(:last-child) {
