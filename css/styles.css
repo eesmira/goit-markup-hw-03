@@ -47,6 +47,10 @@ img {
   list-style: none;
 }
 
+.link {
+  cursor: pointer;
+}
+
 .current {
   color: var(--accent-color);
 }
@@ -87,10 +91,6 @@ img {
   color: var(--primary-txt-color);
   text-align: center;
   margin-bottom: 50px;
-}
-
-.link {
-  cursor: pointer;
 }
 
 /* HEADER */
@@ -335,7 +335,7 @@ img {
   text-decoration: none;
 }
 
-.footer-contacts .email {
+.footer-contact-item > .email {
   margin-bottom: 9px;
 }
 
